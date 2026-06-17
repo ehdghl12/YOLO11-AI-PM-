@@ -212,6 +212,10 @@ Normalized Distance = dis / Kh
 | 테스트 조건 | 주간 및 야간 상황 모두 포함 |
 
 ### 테스트 결과
+<p align="center">
+  <img src="Souce/ftestresult.png" width="950">
+</p>
+
 - 킥보드는 20회 모두 인식되었다.
 - 맨홀 객체와 횡단보도 영역은 비교적 우수한 인식 성능을 보였다.
 - 점자블록과 소화전은 인식률이 낮거나 상황에 따라 불안정하게 탐지되었다.
@@ -219,7 +223,12 @@ Normalized Distance = dis / Kh
 - Confidence Threshold 조정을 통해 일부 객체의 인식 결과가 개선되었다.
 
 ## 온디바이스 성능 결과
-
+<p align="center">
+  <img src="Souce/ondevice_memory.png" width="950">
+</p>
+<p align="center">
+  <img src="Souce/ondevice_infer.png" width="950">
+</p>
 서비스 적용 가능성을 확인하기 위해 iPhone 기기에서 전체 추론시간과 메모리 사용량을 측정하였다.
 
 ### 전체 추론시간
