@@ -45,7 +45,7 @@
 
   <tr>
     <td>전동킥보드</td>
-    <td><img src="Souce/scooter.png" width="120"></td>
+    <td><img src="Souce/Kickboard.png" width="450"></td>
     <td>BBox</td>
     <td>7,000장</td>
     <td>PM 위치 및 크기 기준 객체</td>
