@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA0000000000000000000001 /* KickboardParkingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000001 /* KickboardParkingApp.swift */; };
+		AA0000000000000000000002 /* DetectionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000002 /* DetectionResult.swift */; };
+		AA0000000000000000000003 /* ParkingAssessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000003 /* ParkingAssessment.swift */; };
+		AA0000000000000000000004 /* ParkingRuleEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000004 /* ParkingRuleEngine.swift */; };
+		AA0000000000000000000005 /* YoloService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000005 /* YoloService.swift */; };
+		AA0000000000000000000006 /* DetectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000006 /* DetectionViewModel.swift */; };
+		AA0000000000000000000007 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000007 /* CameraViewModel.swift */; };
+		AA0000000000000000000008 /* UIImage+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000008 /* UIImage+Orientation.swift */; };
+		AA0000000000000000000009 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000009 /* HomeView.swift */; };
+		AA000000000000000000000A /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000000000000000000000A /* CameraPreview.swift */; };
+		AA000000000000000000000B /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000000000000000000000B /* CameraView.swift */; };
+		AA000000000000000000000C /* DetectionResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000000000000000000000C /* DetectionResultView.swift */; };
+		AA000000000000000000000D /* BoundingBoxOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000000000000000000000D /* BoundingBoxOverlay.swift */; };
+		AA000000000000000000000E /* ParkingResultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000000000000000000000E /* ParkingResultCard.swift */; };
+		AA000000000000000000000F /* DetectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000000000000000000000F /* DetectionRow.swift */; };
+		AA0000000000000000000010 /* best.mlpackage in Resources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000010 /* best.mlpackage */; };
+		AA0000000000000000000011 /* args.yaml in Resources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000011 /* args.yaml */; };
+		AA0000000000000000000012 /* CrosswalkRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000013 /* CrosswalkRegion.swift */; };
+		AA0000000000000000000013 /* CrosswalkSegmentationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000014 /* CrosswalkSegmentationService.swift */; };
+		AA0000000000000000000014 /* CrosswalkMaskOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000015 /* CrosswalkMaskOverlay.swift */; };
+		AA0000000000000000000015 /* crosswalk_segmenter.mlpackage in Resources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000016 /* crosswalk_segmenter.mlpackage */; };
+		AA0000000000000000000016 /* crosswalk_args.yaml in Resources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000017 /* crosswalk_args.yaml */; };
+		AA0000000000000000000017 /* PerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000018 /* PerformanceMonitor.swift */; };
+		AA0000000000000000000018 /* PerformanceDashboardCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000019 /* PerformanceDashboardCard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB0000000000000000000000 /* KickboardParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KickboardParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0000000000000000000001 /* KickboardParkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KickboardParkingApp.swift; sourceTree = "<group>"; };
+		BB0000000000000000000002 /* DetectionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionResult.swift; sourceTree = "<group>"; };
+		BB0000000000000000000003 /* ParkingAssessment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingAssessment.swift; sourceTree = "<group>"; };
+		BB0000000000000000000004 /* ParkingRuleEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingRuleEngine.swift; sourceTree = "<group>"; };
+		BB0000000000000000000005 /* YoloService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoloService.swift; sourceTree = "<group>"; };
+		BB0000000000000000000006 /* DetectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionViewModel.swift; sourceTree = "<group>"; };
+		BB0000000000000000000007 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		BB0000000000000000000008 /* UIImage+Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Orientation.swift"; sourceTree = "<group>"; };
+		BB0000000000000000000009 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BB000000000000000000000A /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		BB000000000000000000000B /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		BB000000000000000000000C /* DetectionResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionResultView.swift; sourceTree = "<group>"; };
+		BB000000000000000000000D /* BoundingBoxOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingBoxOverlay.swift; sourceTree = "<group>"; };
+		BB000000000000000000000E /* ParkingResultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingResultCard.swift; sourceTree = "<group>"; };
+		BB000000000000000000000F /* DetectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionRow.swift; sourceTree = "<group>"; };
+		BB0000000000000000000010 /* best.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = best.mlpackage; sourceTree = "<group>"; };
+		BB0000000000000000000011 /* args.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = args.yaml; sourceTree = "<group>"; };
+		BB0000000000000000000012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB0000000000000000000013 /* CrosswalkRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosswalkRegion.swift; sourceTree = "<group>"; };
+		BB0000000000000000000014 /* CrosswalkSegmentationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosswalkSegmentationService.swift; sourceTree = "<group>"; };
+		BB0000000000000000000015 /* CrosswalkMaskOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosswalkMaskOverlay.swift; sourceTree = "<group>"; };
+		BB0000000000000000000016 /* crosswalk_segmenter.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = crosswalk_segmenter.mlpackage; sourceTree = "<group>"; };
+		BB0000000000000000000017 /* crosswalk_args.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = crosswalk_args.yaml; sourceTree = "<group>"; };
+		BB0000000000000000000018 /* PerformanceMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceMonitor.swift; sourceTree = "<group>"; };
+		BB0000000000000000000019 /* PerformanceDashboardCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceDashboardCard.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC0000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD0000000000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				DD0000000000000000000002 /* KickboardParking */,
+				DD0000000000000000000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD0000000000000000000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000000 /* KickboardParking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD0000000000000000000002 /* KickboardParking */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000001 /* KickboardParkingApp.swift */,
+				DD0000000000000000000003 /* Models */,
+				DD0000000000000000000004 /* Services */,
+				DD0000000000000000000005 /* ViewModels */,
+				DD0000000000000000000006 /* Views */,
+				DD0000000000000000000009 /* Extensions */,
+				DD000000000000000000000A /* Resources */,
+				BB0000000000000000000012 /* Info.plist */,
+			);
+			path = KickboardParking;
+			sourceTree = "<group>";
+		};
+		DD0000000000000000000003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000002 /* DetectionResult.swift */,
+				BB0000000000000000000013 /* CrosswalkRegion.swift */,
+				BB0000000000000000000003 /* ParkingAssessment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD0000000000000000000004 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000004 /* ParkingRuleEngine.swift */,
+				BB0000000000000000000018 /* PerformanceMonitor.swift */,
+				BB0000000000000000000014 /* CrosswalkSegmentationService.swift */,
+				BB0000000000000000000005 /* YoloService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DD0000000000000000000005 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000007 /* CameraViewModel.swift */,
+				BB0000000000000000000006 /* DetectionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DD0000000000000000000006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000009 /* HomeView.swift */,
+				BB000000000000000000000B /* CameraView.swift */,
+				BB000000000000000000000C /* DetectionResultView.swift */,
+				DD0000000000000000000008 /* Camera */,
+				DD0000000000000000000007 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD0000000000000000000007 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BB000000000000000000000D /* BoundingBoxOverlay.swift */,
+				BB0000000000000000000015 /* CrosswalkMaskOverlay.swift */,
+				BB000000000000000000000F /* DetectionRow.swift */,
+				BB0000000000000000000019 /* PerformanceDashboardCard.swift */,
+				BB000000000000000000000E /* ParkingResultCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DD0000000000000000000008 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				BB000000000000000000000A /* CameraPreview.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		DD0000000000000000000009 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000008 /* UIImage+Orientation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DD000000000000000000000A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000010 /* best.mlpackage */,
+				BB0000000000000000000011 /* args.yaml */,
+				BB0000000000000000000016 /* crosswalk_segmenter.mlpackage */,
+				BB0000000000000000000017 /* crosswalk_args.yaml */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE0000000000000000000000 /* KickboardParking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF0000000000000000000002 /* Build configuration list for PBXNativeTarget "KickboardParking" */;
+			buildPhases = (
+				GG0000000000000000000001 /* Sources */,
+				CC0000000000000000000001 /* Frameworks */,
+				GG0000000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KickboardParking;
+			productName = KickboardParking;
+			productReference = BB0000000000000000000000 /* KickboardParking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		HH0000000000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					EE0000000000000000000000 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = FF0000000000000000000001 /* Build configuration list for PBXProject "KickboardParking" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				ko,
+				en,
+				Base,
+			);
+			mainGroup = DD0000000000000000000000;
+			productRefGroup = DD0000000000000000000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE0000000000000000000000 /* KickboardParking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		GG0000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000000000000000000010 /* best.mlpackage in Resources */,
+				AA0000000000000000000011 /* args.yaml in Resources */,
+				AA0000000000000000000015 /* crosswalk_segmenter.mlpackage in Resources */,
+				AA0000000000000000000016 /* crosswalk_args.yaml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		GG0000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000000000000000000001 /* KickboardParkingApp.swift in Sources */,
+				AA0000000000000000000002 /* DetectionResult.swift in Sources */,
+				AA0000000000000000000012 /* CrosswalkRegion.swift in Sources */,
+				AA0000000000000000000003 /* ParkingAssessment.swift in Sources */,
+				AA0000000000000000000004 /* ParkingRuleEngine.swift in Sources */,
+				AA0000000000000000000017 /* PerformanceMonitor.swift in Sources */,
+				AA0000000000000000000013 /* CrosswalkSegmentationService.swift in Sources */,
+				AA0000000000000000000005 /* YoloService.swift in Sources */,
+				AA0000000000000000000006 /* DetectionViewModel.swift in Sources */,
+				AA0000000000000000000007 /* CameraViewModel.swift in Sources */,
+				AA0000000000000000000008 /* UIImage+Orientation.swift in Sources */,
+				AA0000000000000000000009 /* HomeView.swift in Sources */,
+				AA000000000000000000000A /* CameraPreview.swift in Sources */,
+				AA000000000000000000000B /* CameraView.swift in Sources */,
+				AA000000000000000000000C /* DetectionResultView.swift in Sources */,
+				AA000000000000000000000D /* BoundingBoxOverlay.swift in Sources */,
+				AA0000000000000000000014 /* CrosswalkMaskOverlay.swift in Sources */,
+				AA000000000000000000000E /* ParkingResultCard.swift in Sources */,
+				AA0000000000000000000018 /* PerformanceDashboardCard.swift in Sources */,
+				AA000000000000000000000F /* DetectionRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		II0000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = S3T3FAULYM;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		II0000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = S3T3FAULYM;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		II0000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_LANGUAGE = ko;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = KickboardParking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.donghoe.KickboardParking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		II0000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_LANGUAGE = ko;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = KickboardParking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.donghoe.KickboardParking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF0000000000000000000001 /* Build configuration list for PBXProject "KickboardParking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				II0000000000000000000001 /* Debug */,
+				II0000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF0000000000000000000002 /* Build configuration list for PBXNativeTarget "KickboardParking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				II0000000000000000000003 /* Debug */,
+				II0000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = HH0000000000000000000000 /* Project object */;
+}

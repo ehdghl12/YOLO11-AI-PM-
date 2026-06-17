@@ -1,0 +1,14 @@
+task: detect
+mode: train
+model: yolo11n.pt
+data: C:\Users\konyang\Desktop\detect_dataset\data.yaml
+epochs: 70
+imgsz: 640
+format: torchscript
+nms: false
+classes:
+  0: kickboard
+  1: manhole
+  2: fire_hydrant
+  3: bollard
+  4: tactile_paving
