@@ -138,6 +138,7 @@
 | `Om` | 위험 객체 BBox의 중심점 |
 | `dis` | `Km`과 `Om` 사이의 거리(px) |
 | `T` | 객체별 거리 임계값 |
+
 정규화 거리는 다음과 같이 계산합니다
 ```text
 Normalized Distance = dis / Kh
